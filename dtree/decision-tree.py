@@ -2,7 +2,7 @@ import pandas as pd
 
 from sklearn.tree import DecisionTreeClassifier
 
-train = pd.read_csv('./data/dataset/Iiris_train.csv')
+train = pd.read_csv('./data/dataset/iris_train.csv')
 X_train = train.drop(columns=['species']).to_numpy()
 y_train = train['species'].to_numpy()
 

@@ -42,3 +42,19 @@ stages:
     - path: metrics.txt
       md5: 94d6ea0fed362c7ea91e1509507f17fa
       size: 30
+  dtree_train:
+    cmd: python3 dtree/decision-tree.py
+    deps:
+    - path: data/dataset/iris_test.csv
+      md5: e9583b1fd4c19c4ae95b3672f8426818
+      size: 1013
+    - path: data/dataset/iris_train.csv
+      md5: 7530b54678cff7c19ab9a73dcff4ad25
+      size: 2295
+    - path: dtree/decision-tree.py
+      md5: d0fc7a49df3f5df606ec157188da6a3d
+      size: 503
+    outs:
+    - path: dtree/predict.txt
+      md5: c4ea15b34273ef0bcee7296221c15840
+      size: 135
