@@ -35,13 +35,16 @@ stages:
   evaluate:
     cmd: python3 evaluate.py
     deps:
+    - path: dtree/predict.txt
+      md5: c4ea15b34273ef0bcee7296221c15840
+      size: 135
     - path: k-means/predict.txt
       md5: e69db467ce9e60169e2f9ad47388650f
       size: 135
     outs:
     - path: metrics.txt
-      md5: 94d6ea0fed362c7ea91e1509507f17fa
-      size: 30
+      md5: 253c7ce4a72f7ab2ac094e37c61b7dc1
+      size: 60
   dtree_train:
     cmd: python3 dtree/decision-tree.py
     deps:
