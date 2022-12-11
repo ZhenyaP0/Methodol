@@ -15,3 +15,10 @@ stages:
     - k-means/k-means.py
     outs:
     - k-means/predict.txt
+  evaluate:
+    cmd: python3 evaluate.py
+    deps:
+    - k-means/predict.txt
+    metrics:
+    - metrics.txt:
+
