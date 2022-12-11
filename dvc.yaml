@@ -20,5 +20,5 @@ stages:
     deps:
     - k-means/predict.txt
     metrics:
-    - metrics.txt:
+    - metrics.txt
 
